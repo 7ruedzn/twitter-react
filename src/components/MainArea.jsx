@@ -1,19 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-
 const MainArea = () => {
-    return (
-        <main>
-            <h1>Main</h1>
-        </main>
-    )
-}
+  return (
+    <main className="main-area">
+      <h1>Main</h1>
+    </main>
+  );
+};
 
 // const mainStyle = {
 //     backgroundColor: 'green',
 //     height: '100%'
 // }
 
-ReactDOM.render(<MainArea />, document.querySelector('.mainArea'))
+// ReactDOM.render(<MainArea />, document.querySelector('.mainArea'))
 
-export default MainArea
+export default MainArea;

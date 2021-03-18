@@ -1,0 +1,117 @@
+$bg-color: #101010;
+$tt-blue: #1da1f2;
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto";
+}
+
+.tt-btn {
+  @include flexCenter();
+  text-align: center;
+  border-radius: 50px;
+  background-color: $tt-blue;
+  height: 50px;
+  width: 235px;
+}
+
+#App {
+  font-family: "Roboto";
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  color: #202020;
+  grid-template-columns: 1fr 600px 1fr;
+  grid-template-rows: 80px 1fr;
+  grid-template-areas:
+    "left-side header right-side"
+    "left-side main-area right-side";
+}
+
+h1 {
+  font-family: "Roboto";
+  margin: 0;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  //   justify-content: center;
+  align-items: flex-end;
+  color: #ddd;
+  // font-size: 0.8em;
+  grid-area: left-side;
+  background-color: $bg-color;
+  padding: 10px 40px;
+
+  i {
+    margin-right: 20px;
+    font-size: 25px;
+    color: white;
+  }
+
+  .fa {
+    height: 20px;
+    width: 20px;
+  }
+
+  .icons-container {
+    h1 {
+      color: #ddd;
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+      color: white;
+      flex-grow: 1;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 500px;
+  }
+
+  .left-side-container {
+    display: flex;
+    height: 500px;
+  }
+}
+
+.bookmark,
+.home,
+.notifications,
+.messages,
+.explore,
+.more,
+.profile,
+.lists {
+  display: flex;
+  align-items: baseline;
+  justify-content: baseline;
+}
+
+.header {
+  color: #fff;
+  grid-area: header;
+  background-color: $bg-color;
+  border: solid 1px rgba(128, 128, 128, 0.397);
+}
+
+.main-area {
+  color: #fff;
+  grid-area: main-area;
+  background-color: $bg-color;
+  border: solid 1px rgba(128, 128, 128, 0.397);
+}
+
+.right-side {
+  color: #fff;
+  grid-area: right-side;
+  background-color: $bg-color;
+}
