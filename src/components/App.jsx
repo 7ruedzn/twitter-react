@@ -5,6 +5,7 @@ import Header from "./Header";
 import MainArea from "./MainArea";
 import RightSide from "./RightSide";
 import LeftSide from "./LeftSide";
+import MainItem from "./MainItem";
 
 const App = () => {
   return (
@@ -16,7 +17,5 @@ const App = () => {
     </div>
   );
 };
-
-ReactDOM.render(<App />, document.getElementById("root"));
 
 export default App;
