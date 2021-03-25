@@ -1,15 +1,19 @@
+import SearchBar from './SearchBar'
+import RightSideItem from './RightSideItem'
+
 const RightSide = () => {
   return (
     <div className="right-side">
-      <h1>RightSide</h1>
+      <div className="right-side-container">
+        <SearchBar />
+        <RightSideItem 
+        title="What's happening"
+        titleItem="FRUSCIANTE IS BACK!!!!"
+        from="Trending in RHCP"
+        imgURL="https://www.rollingstone.com/wp-content/uploads/2018/06/rs-14879-frusciante-1800-1396286065.jpg"/>
+      </div>
     </div>
   );
 };
-
-// const otherStyle = {
-//     backgroundColor: 'red',
-// }
-
-// ReactDOM.render(<RightSide />, document.querySelector('.other'))
 
 export default RightSide;

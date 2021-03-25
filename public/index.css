@@ -370,4 +370,121 @@ h1 {
   grid-area: right-side;
   background-color: #101010;
 }
+
+.right-side .search-bar-container {
+  margin-bottom: 15px;
+}
+
+.right-side .search-bar-container .search-bar-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 20px;
+  border-radius: 50px;
+  height: 50px;
+  width: 300px;
+  background-color: #202020;
+  color: #ccc;
+}
+
+.right-side .search-bar-container .search-bar-wrapper .search-bar {
+  padding: 0px 20px;
+  border-radius: 50px;
+  height: 50px;
+  width: 300px;
+  border: none;
+  outline: none;
+  background-color: #202020;
+  font-family: "Segoe UI";
+  color: #ccc;
+}
+
+.right-side .search-bar-container .search-bar-wrapper .search-bar:focus {
+  border: none;
+}
+
+.right-side .right-side-item {
+  height: 600px;
+  width: 325px;
+  border-radius: 25px;
+  background-color: #202020;
+}
+
+.right-side .right-side-item .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 15px;
+  height: 100px;
+  width: 100%;
+  border-bottom: solid 1px rgba(128, 128, 128, 0.397);
+}
+
+.right-side .right-side-item .item .text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  float: left;
+  height: 60px;
+}
+
+.right-side .right-side-item .item .text-container h2 {
+  margin: 0px;
+}
+
+.right-side .right-side-item .item .item-img {
+  height: 70px;
+  width: 70px;
+  border-radius: 15px;
+}
+
+.right-side .right-side-item .item .item-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.right-side .right-side-item .item h1 {
+  font-size: 14px;
+  color: #ddd;
+}
+
+.right-side .right-side-item .item h2 {
+  font-family: "Segoe UI";
+  font-weight: 100;
+  font-size: 14px;
+  color: #808080;
+}
 /*# sourceMappingURL=index.css.map */

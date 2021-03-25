@@ -4,6 +4,8 @@ $border-color: rgba(128, 128, 128, 0.397);
 $padding: 0px 20px;
 $font-sec: "Segoe UI";
 $font-main: "Roboto";
+$font-light-color: #808080;
+$font-bold-color: #ddd;
 
 @mixin flexCenter($justify, $direction: row) {
   display: flex;
@@ -251,10 +253,87 @@ h1 {
 }
 
 .right-side {
-  // position: fixed;
-  // right: 0;
   padding: $padding;
   color: #fff;
   grid-area: right-side;
   background-color: $bg-color;
+
+  .search-bar-container {
+    margin-bottom: 15px;
+    .search-bar-wrapper {
+      @include flexCenter(flex-start);
+      padding: $padding;
+      border-radius: 50px;
+      height: 50px;
+      width: 300px;
+      background-color: #202020;
+      color: #ccc;
+
+      .search-bar {
+        padding: $padding;
+        border-radius: 50px;
+        height: 50px;
+        width: 300px;
+        border: none;
+        outline: none;
+        background-color: #202020;
+        font-family: $font-sec;
+        color: #ccc;
+        &:focus {
+          border: none;
+        }
+      }
+    }
+  }
+
+  .right-side-item {
+    height: 600px;
+    width: 325px;
+    border-radius: 25px;
+    background-color: #202020;
+
+    .item {
+      @include flexCenter(space-between);
+      padding: 10px 15px;
+      height: 100px;
+      width: 100%;
+      border-bottom: solid 1px $border-color;
+
+      .text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        float: left;
+        height: 60px;
+        h2 {
+          margin: 0px;
+        }
+      }
+
+      .item-img {
+        height: 70px;
+        width: 70px;
+        border-radius: 15px;
+        // object-fit: scale-down;
+
+        img {
+          height: 100%;
+          width: 100%;
+          border-radius: 15px;
+          object-fit: cover;
+        }
+      }
+      h1 {
+        font-size: 14px;
+        color: #ddd;
+      }
+      h2 {
+        font-family: $font-sec;
+        font-weight: 100;
+        font-size: 14px;
+        color: #808080;
+      }
+    }
+  }
 }
