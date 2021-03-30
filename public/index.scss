@@ -6,6 +6,7 @@ $font-sec: "Segoe UI";
 $font-main: "Roboto";
 $font-light-color: #808080;
 $font-bold-color: #ddd;
+$item-color: #171717;
 
 @mixin flexCenter($justify, $direction: row) {
   display: flex;
@@ -258,6 +259,11 @@ h1 {
   grid-area: right-side;
   background-color: $bg-color;
 
+  h1 {
+    font-size: 18px;
+    color: $font-bold-color;
+  }
+
   .search-bar-container {
     margin-bottom: 15px;
     .search-bar-wrapper {
@@ -265,7 +271,7 @@ h1 {
       padding: $padding;
       border-radius: 50px;
       height: 50px;
-      width: 300px;
+      width: 325px;
       background-color: #202020;
       color: #ccc;
 
@@ -273,7 +279,7 @@ h1 {
         padding: $padding;
         border-radius: 50px;
         height: 50px;
-        width: 300px;
+        width: 325px;
         border: none;
         outline: none;
         background-color: #202020;
@@ -286,53 +292,106 @@ h1 {
     }
   }
 
-  .right-side-item {
-    height: 600px;
-    width: 325px;
-    border-radius: 25px;
-    background-color: #202020;
+  .right-side-container {
+    height: 100%;
+    width: 100%;
+    // border-radius: 10px;
+    // background-color: #202020;
 
-    .item {
-      @include flexCenter(space-between);
-      padding: 10px 15px;
-      height: 100px;
-      width: 100%;
-      border-bottom: solid 1px $border-color;
+    .right-side-item {
+      margin-top: 20px;
+      height: 480px;
+      width: 325px;
+      border-radius: 10px;
+      background-color: $item-color;
+      word-wrap: normal;
 
-      .text-container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        float: left;
-        height: 60px;
+    .right-side-who-to-follow {
+      margin-top: 20px;
+      height: 380px;
+      width: 325px;
+      border-radius: 10px;
+      background-color: $item-color;
+      word-wrap: normal;
+
+      .right-side-item-up {
+        @include flexCenter(flex-start);
+        padding: 10px 15px;
+        height: 50px;
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom: solid 1px $border-color;
+        background-color: $item-color;
+
+        h1 {
+          font-size: 20px;
+          font-weight: 900;
+        }
+      }
+      .right-side-item-bottom {
+        @include flexCenter(flex-start);
+        padding: 10px 15px;
+        height: 50px;
+        width: 100%;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top: solid 1px $border-color;
+        background-color: $item-color;
+
         h2 {
-          margin: 0px;
+          font-size: 15px;
+          color: $tt-blue;
         }
       }
 
-      .item-img {
-        height: 70px;
-        width: 70px;
-        border-radius: 15px;
-        // object-fit: scale-down;
+      .item {
+        @include flexCenter(space-between);
+        padding: 10px 15px;
+        height: 80px;
+        width: 100%;
+        border-bottom: solid 1px $border-color;
 
-        img {
+        .text-container {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          float: left;
           height: 100%;
-          width: 100%;
-          border-radius: 15px;
-          object-fit: cover;
+          width: 230px;
+
+          h2 {
+            margin: 0px;
+          }
         }
-      }
-      h1 {
-        font-size: 14px;
-        color: #ddd;
-      }
-      h2 {
-        font-family: $font-sec;
-        font-weight: 100;
-        font-size: 14px;
-        color: #808080;
+
+        .item-img {
+          height: 60px;
+          width: 60px;
+          border-radius: 15px;
+          background-color: #202020;
+          // object-fit: scale-down;
+
+          img {
+            height: 100%;
+            width: 100%;
+            border-radius: 15px;
+            object-fit: cover;
+          }
+        }
+
+        h1 {
+          font-size: 16px;
+          color: #ddd;
+        }
+
+        h2 {
+          font-family: $font-sec;
+          font-weight: 100;
+          font-size: 14px;
+          color: #808080;
+        }
       }
     }
   }

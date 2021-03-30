@@ -3,7 +3,7 @@ import RightSideTopicsNoPhoto from "./RightSideTopicsNoPhoto";
 import RightSideItemUp from "./RightSideItemUp";
 import RightSideItemBottom from "./RightSideItemBottom";
 
-const RightSideItem = () => {
+const RightSideWhoToFollow = () => {
   return (
     <div className="right-side-item">
       <RightSideItemUp title="What's Happening" />
@@ -37,4 +37,4 @@ const RightSideItem = () => {
   );
 };
 
-export default RightSideItem;
+export default RightSideWhoToFollow;
