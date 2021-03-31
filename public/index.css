@@ -419,12 +419,24 @@ h1 {
 }
 
 .right-side .right-side-container {
-  height: 100%;
+  height: 100vh;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .right-side .right-side-container .right-side-item {
-  margin-top: 20px;
   height: 480px;
   width: 325px;
   border-radius: 10px;
@@ -474,6 +486,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 20px;
   padding: 10px 15px;
   height: 50px;
   width: 100%;
@@ -552,6 +565,142 @@ h1 {
 }
 
 .right-side .right-side-container .right-side-item .item h2 {
+  font-family: "Segoe UI";
+  font-weight: 100;
+  font-size: 14px;
+  color: #808080;
+}
+
+.right-side .right-side-container .right-side-who-to-follow {
+  margin-top: 40px;
+  height: 380px;
+  width: 325px;
+  border-radius: 10px;
+  background-color: yellow;
+  word-wrap: normal;
+}
+
+.right-side .right-side-container .right-side-who-to-follow .right-side-item-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 15px;
+  height: 50px;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: solid 1px rgba(128, 128, 128, 0.397);
+  background-color: #171717;
+}
+
+.right-side .right-side-container .right-side-who-to-follow .right-side-item-up h1 {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.right-side .right-side-container .right-side-who-to-follow .right-side-item-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  height: 50px;
+  width: 100%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top: solid 1px rgba(128, 128, 128, 0.397);
+  background-color: #171717;
+}
+
+.right-side .right-side-container .right-side-who-to-follow .right-side-item-bottom h2 {
+  font-size: 15px;
+  color: #1da1f2;
+}
+
+.right-side .right-side-container .right-side-who-to-follow .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 15px;
+  height: 80px;
+  width: 100%;
+  border-bottom: solid 1px rgba(128, 128, 128, 0.397);
+}
+
+.right-side .right-side-container .right-side-who-to-follow .item .text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  float: left;
+  height: 100%;
+  width: 230px;
+}
+
+.right-side .right-side-container .right-side-who-to-follow .item .text-container h2 {
+  margin: 0px;
+}
+
+.right-side .right-side-container .right-side-who-to-follow .item .item-img {
+  height: 60px;
+  width: 60px;
+  border-radius: 15px;
+  background-color: #202020;
+}
+
+.right-side .right-side-container .right-side-who-to-follow .item .item-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.right-side .right-side-container .right-side-who-to-follow .item h1 {
+  font-size: 16px;
+  color: #ddd;
+}
+
+.right-side .right-side-container .right-side-who-to-follow .item h2 {
   font-family: "Segoe UI";
   font-weight: 100;
   font-size: 14px;

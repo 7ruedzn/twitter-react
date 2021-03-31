@@ -5,28 +5,8 @@ import RightSideItemBottom from "./RightSideItemBottom";
 
 const RightSideWhoToFollow = () => {
   return (
-    <div className="right-side-item">
-      <RightSideItemUp title="What's Happening" />
-      <RightSideTopics
-        titleItem="FRUSCIANTE IS BACK!!!!"
-        from="Trending in RHCP"
-        imgURL="https://www.rollingstone.com/wp-content/uploads/2018/06/rs-14879-frusciante-1800-1396286065.jpg"
-      />
-      <RightSideTopicsNoPhoto
-        titleItem="Golira"
-        from="Trending in Memes"
-        subtitle="9,183 Tweets"
-      />
-      <RightSideTopicsNoPhoto
-        titleItem="Ferrari"
-        from="Auto Racing Trending"
-        subtitle="Trending with McLaren"
-      />
-      <RightSideTopics
-        titleItem="Cachorro Caramelo"
-        from="Trending in Brazil"
-        imgURL="https://olhardacidade.com.br/wp-content/uploads/2020/08/25743537.jpg"
-      />
+    <div className="right-side-who-to-follow">
+      <RightSideItemUp title="Who To Follow" />
       <RightSideTopics
         titleItem="React in frameworks"
         from="Trending in React"
