@@ -24,6 +24,12 @@ body {
   width: 235px;
 }
 
+.btn-blue {
+  border-radius: #1da1f2;
+  padding: 5px 10px;
+  background-color: #171717;
+}
+
 #App {
   font-family: "Segoe UI";
   display: -ms-grid;
@@ -573,7 +579,7 @@ h1 {
 
 .right-side .right-side-container .right-side-who-to-follow {
   margin-top: 40px;
-  height: 380px;
+  height: 350px;
   width: 325px;
   border-radius: 10px;
   background-color: yellow;
