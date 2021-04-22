@@ -72,7 +72,7 @@ body {
   -o-object-fit: fill;
      object-fit: fill;
   border-radius: 150px;
-  background-color: red;
+  background-color: #101010;
 }
 
 .avatar-container img {
@@ -132,6 +132,56 @@ h1 {
   width: 20px;
 }
 
+.left-side .user-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 235px;
+  height: 50%;
+}
+
+.left-side .right-side-who-to-follow-item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.left-side .right-side-who-to-follow-item h1 {
+  font-size: 15px;
+}
+
+.left-side .right-side-who-to-follow-item h2 {
+  font-family: "Segoe UI";
+  font-weight: 100;
+  font-size: 15px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  color: #808080;
+  margin: 0;
+}
+
 .left-side .icons-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -163,7 +213,7 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 500px;
+  height: 600px;
 }
 
 .bookmark,
@@ -666,6 +716,10 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -683,16 +737,16 @@ h1 {
   height: 50px;
   width: 50px;
   margin-right: 10px;
-  -o-object-fit: fill;
-     object-fit: fill;
   border-radius: 150px;
-  background-color: red;
+  background-color: #101010;
 }
 
 .right-side .right-side-container .right-side-who-to-follow .right-side-who-to-follow-item .avatar-container img {
-  height: 50px;
-  width: 50px;
+  height: 100%;
+  width: 100%;
   border-radius: 150px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 .right-side .right-side-container .right-side-who-to-follow .right-side-who-to-follow-item .who-to-follow-item-text-container {
@@ -777,7 +831,7 @@ h1 {
   height: 60px;
   width: 60px;
   border-radius: 15px;
-  background-color: red;
+  background-color: #171717;
 }
 
 .right-side .right-side-container .right-side-who-to-follow .item .item-img img {

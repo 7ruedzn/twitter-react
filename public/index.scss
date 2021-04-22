@@ -64,7 +64,7 @@ body {
   margin-right: 10px;
   object-fit: fill;
   border-radius: 150px;
-  background-color: red;
+  background-color: $bg-color;
 
   img {
     height: 60px;
@@ -93,8 +93,6 @@ h1 {
 }
 
 .left-side {
-  // position: fixed;
-  // // left: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -102,6 +100,8 @@ h1 {
   grid-area: left-side;
   background-color: $bg-color;
   padding: 10px 30px;
+  // arrumar para definir user
+  // height: 100vh;
 
   i {
     margin-right: 20px;
@@ -114,6 +114,33 @@ h1 {
     width: 20px;
   }
 
+  .user-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 235px;
+    height: 50%;
+  }
+  .right-side-who-to-follow-item {
+    flex-grow: 1;
+    @include flexStart(row);
+
+    h1 {
+      font-size: 15px;
+    }
+
+    h2 {
+      font-family: $font-sec;
+      font-weight: 100;
+      font-size: 15px;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 5px;
+      color: $font-light-color;
+      margin: 0;
+    }
+  }
   .icons-container {
     h1 {
       color: #ddd;
@@ -132,7 +159,7 @@ h1 {
 
   .left-side-container {
     display: flex;
-    height: 500px;
+    height: 600px;
   }
 }
 
@@ -452,9 +479,7 @@ h1 {
       }
 
       .right-side-who-to-follow-item {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flexCenter(space-between);
         width: 100%;
         height: 70px;
         background-color: $item-color;
@@ -465,14 +490,14 @@ h1 {
           height: 50px;
           width: 50px;
           margin-right: 10px;
-          object-fit: fill;
           border-radius: 150px;
-          background-color: red;
+          background-color: $bg-color;
 
           img {
-            height: 50px;
-            width: 50px;
+            height: 100%;
+            width: 100%;
             border-radius: 150px;
+            object-fit: scale-down;
           }
         }
 
