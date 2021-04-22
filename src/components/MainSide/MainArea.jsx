@@ -21,8 +21,8 @@ const MainArea = () => {
         photoURL="https://images.unsplash.com/photo-1616434963536-02c5002683d2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=633&q=80"
         tweet="Nice photo i took eyesterday"
         likes="10.8k"
-        rts="6565"
-        comments="2334"/>
+        rts="6.5k"
+        comments="2.3k"/>
       <MainItemPhoto 
         avatarURL="https://images.unsplash.com/photo-1616465470189-573a865a63ca?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzN3x8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
         title="userLogo"

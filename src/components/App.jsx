@@ -1,11 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 
 import Header from "./Header";
-import MainArea from "./MainArea";
-import RightSide from "./RightSide";
-import LeftSide from "./LeftSide";
-import MainItem from "./MainItem";
+import MainArea from "./MainSide/MainArea";
+import RightSide from "./RightSide/RightSide";
+import LeftSide from "./LeftSide/LeftSide";
+// import MainItem from "./MainSide/MainItem";
 
 const App = () => {
   return (

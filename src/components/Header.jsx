@@ -1,10 +1,10 @@
-import Item from './LeftSideItem';
+import Item from "./LeftSide/LeftSideItem";
 
 const Header = () => {
   return (
     <header className="header">
-        <h1>Home</h1>
-        <Item icon="fa fa-star-o"/>
+      <h1>Home</h1>
+      <Item icon="fa fa-star-o" />
     </header>
   );
 };

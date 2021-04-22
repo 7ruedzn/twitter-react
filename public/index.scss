@@ -37,9 +37,40 @@ body {
 }
 
 .btn-blue {
-  border-radius: $tt-blue;
+  @include flexCenter(center);
+  border-radius: 30px;
+  border: solid 1.5px $tt-blue;
+  width: 85px;
+  height: 35px;
   padding: 5px 10px;
-  background-color: $item-color;
+  background-color: $bg-color;
+  color: $tt-blue;
+
+  h3 {
+    margin: 0;
+    color: $tt-blue;
+    font-weight: 700;
+    font-family: $font-sec;
+    font-size: 16px;
+  }
+}
+
+.avatar-container {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 60px;
+  width: 60px;
+  margin-right: 10px;
+  object-fit: fill;
+  border-radius: 150px;
+  background-color: red;
+
+  img {
+    height: 60px;
+    width: 60px;
+    border-radius: 150px;
+  }
 }
 
 #App {
@@ -48,7 +79,7 @@ body {
   width: 100%;
   height: 100vh;
   color: #202020;
-  grid-template-columns: 1fr 600px 1fr;
+  grid-template-columns: 0.85fr 600px 1fr;
   grid-template-rows: 50px 1fr;
   grid-template-areas:
     "left-side header right-side"
@@ -70,7 +101,7 @@ h1 {
   color: #ddd;
   grid-area: left-side;
   background-color: $bg-color;
-  padding: 10px 40px;
+  padding: 10px 30px;
 
   i {
     margin-right: 20px;
@@ -222,24 +253,6 @@ h1 {
     }
   }
 
-  .avatar-container {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 60px;
-    width: 60px;
-    margin-right: 10px;
-    object-fit: scale-down;
-    border-radius: 150px;
-    background-color: yellow;
-
-    img {
-      height: 60px;
-      width: 60px;
-      border-radius: 150px;
-    }
-  }
-
   .main-text-container {
     display: flex;
     flex-direction: column;
@@ -305,12 +318,13 @@ h1 {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-bottom: 20px;
     // border-radius: 10px;
     // background-color: #202020;
 
     .right-side-item {
       // margin-top: 20px;
-      height: 480px;
+      // height: 480px;
       width: 325px;
       border-radius: 10px;
       background-color: $item-color;
@@ -333,13 +347,13 @@ h1 {
       }
       .right-side-item-bottom {
         @include flexCenter(flex-start);
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
         padding: 10px 15px;
         height: 50px;
         width: 100%;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
-        border-top: solid 1px $border-color;
+        // border-top: solid 1px $border-color;
         background-color: $item-color;
 
         h2 {
@@ -399,10 +413,10 @@ h1 {
     }
     .right-side-who-to-follow {
       margin-top: 40px;
-      height: 350px;
+      // height: 100%;
       width: 325px;
       border-radius: 10px;
-      background-color: yellow;
+      // background-color: yellow;
       word-wrap: normal;
 
       .right-side-item-up {
@@ -420,20 +434,66 @@ h1 {
           font-weight: 900;
         }
       }
+
       .right-side-item-bottom {
         @include flexCenter(flex-start);
-        margin-bottom: 20px;
         padding: 10px 15px;
         height: 50px;
         width: 100%;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
-        border-top: solid 1px $border-color;
+        // border-top: solid 1px $border-color;
         background-color: $item-color;
 
         h2 {
           font-size: 15px;
           color: $tt-blue;
+        }
+      }
+
+      .right-side-who-to-follow-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+        background-color: $item-color;
+        border-bottom: solid 1px $border-color;
+        padding: $padding;
+
+        .avatar-container {
+          height: 50px;
+          width: 50px;
+          margin-right: 10px;
+          object-fit: fill;
+          border-radius: 150px;
+          background-color: red;
+
+          img {
+            height: 50px;
+            width: 50px;
+            border-radius: 150px;
+          }
+        }
+
+        .who-to-follow-item-text-container {
+          @include flexStart(column);
+          flex-grow: 1;
+        }
+        h1 {
+          font-size: 15px;
+        }
+
+        h2 {
+          font-family: $font-sec;
+          font-weight: 100;
+          font-size: 15px;
+          margin-top: 0px;
+          margin-right: 0px;
+          margin-bottom: 0px;
+          margin-left: 5px;
+          color: $font-light-color;
+          margin: 0;
         }
       }
 
@@ -462,7 +522,7 @@ h1 {
           height: 60px;
           width: 60px;
           border-radius: 15px;
-          background-color: #202020;
+          background-color: $item-color;
           // object-fit: scale-down;
 
           img {

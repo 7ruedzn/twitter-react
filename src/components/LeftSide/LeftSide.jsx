@@ -1,5 +1,5 @@
 import Item from './LeftSideItem'
-import Button from './Button'
+import Button from '../Button'
 
 const LeftSide = () => {
   return (
